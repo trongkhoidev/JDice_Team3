@@ -113,7 +113,7 @@ public class JDice {
 		}
 	    }
 	    catch(IOException ioe){
-		ioe.printStackTrace();
+		ioe.printStackTrace(); // why warming? 
 		System.err.println("***********\n**********\n");
 		System.err.println("Could not read input file: "+args[0]);
 		System.err.println("***********\n**********\n");
