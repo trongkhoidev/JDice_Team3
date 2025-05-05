@@ -97,18 +97,8 @@ public class JDice {
 	    for(i=0;i<selectionIndices.length;i++) {
 		selectionIndices[i]=i;
 	    }
-	    System.out.println("dog, duck, hipop, monkey");
-	    resultList.setSelectedIndices(selectionIndices);
-		listItems.add(i+start,toAdd);
-		public String toString() {
-			return total +"  <= " +rolls.toString()+ 
-				(modifier>0?("+"+modifier):
-				 modifier<0?modifier:"");
-		}
-			}
-		public static void main(String[] args) {
-			
-		}
+	    resultList.setListData(listItems);
+	    resultList.setSelectedIndices(selectionIndices); // đã sửa
 	}
     }
     
@@ -123,7 +113,7 @@ public class JDice {
 		}
 	    }
 	    catch(IOException ioe){
-		ioe.printStackTrace();
+		ioe.printStackTrace(); // why warming? 
 		System.err.println("***********\n**********\n");
 		System.err.println("Could not read input file: "+args[0]);
 		System.err.println("***********\n**********\n");

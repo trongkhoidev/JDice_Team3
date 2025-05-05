@@ -25,7 +25,7 @@ public class DiceSum extends DieRoll {
     
     public DiceSum(DieRoll r1,
                   DieRoll r2) {
-        super(0, 0, 0);
+        super(1, 1, 0);
         this.r1 = r1;
         this.r2 = r2;
     }
