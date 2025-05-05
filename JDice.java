@@ -98,7 +98,7 @@ public class JDice {
 		selectionIndices[i]=i;
 	    }
 	    resultList.setListData(listItems);
-	    resultList.setSelectedIndices(selectionIndices);
+	    resultList.setSelectedIndices(selectionIndices); // đã sửa
 	}
     }
     
