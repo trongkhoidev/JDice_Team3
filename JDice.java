@@ -106,7 +106,9 @@ public class JDice {
 				 modifier<0?modifier:"");
 		}
 			}
-		
+		public static void main(String[] args) {
+			
+		}
 	}
     }
     
