@@ -97,8 +97,18 @@ public class JDice {
 	    for(i=0;i<selectionIndices.length;i++) {
 		selectionIndices[i]=i;
 	    }
-	    resultList.setListData(listItems);
+	    System.out.println("dog, duck, hipop, monkey");
 	    resultList.setSelectedIndices(selectionIndices);
+		listItems.add(i+start,toAdd);
+		public String toString() {
+			return total +"  <= " +rolls.toString()+ 
+				(modifier>0?("+"+modifier):
+				 modifier<0?modifier:"");
+		}
+			}
+		public static void main(String[] args) {
+			
+		}
 	}
     }
     
