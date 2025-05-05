@@ -214,19 +214,18 @@ public class DiceParser {
         }
     }
 
-    private static void test(String s) {
-        Vector<DieRoll> v = parseRoll(s);
-        if (v == null)
-            System.out.println("Failure:" + s);
-        else {
-            System.out.println("Results for " + s + ":");
-            for (DieRoll dr : v) {
-                System.out.print(dr);
-                System.out.print(": ");
-                System.out.println(dr.makeRoll());
-            }
-        }
-    }
+	private static void test(String s) {
+		Vector<DieRoll> v = parseRoll(s);
+		if (v == null) {
+			logger.warning("Failure: " + s);  // Sử dụng logger.warning thay vì System.out.println cho thất bại
+		} else {
+			logger.info("Results for " + s + ":"); // Sử dụng logger.info thay vì System.out.println cho kết quả thành công
+			for (DieRoll dr : v) {
+				logger.info(dr.toString() + ": " + dr.makeRoll()); // Log kết quả mỗi lần roll xúc xắc
+			}
+		}
+	}
+	
 
     public static void main(String[] args) {
         test("d6");
