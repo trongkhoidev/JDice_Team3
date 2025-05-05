@@ -101,7 +101,6 @@ public class JDice {
 	    resultList.setSelectedIndices(selectionIndices);
 	}
     }
-    
     public static void main(String[] args) {
 	Vector<String> v=new Vector<String>();
 	if(args.length>=1) {
