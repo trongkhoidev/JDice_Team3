@@ -98,15 +98,10 @@ public class JDice {
 		selectionIndices[i]=i;
 	    }
 	    resultList.setListData(listItems);
-		for(i=0;i<v.size();i++) { 
-			DieRoll dr=v.get(i);
-			RollResult rr=dr.makeRoll();
-			String toAdd=prepend+dr+"  =>  "+rr;
-			listItems.add(i+start,toAdd);
-			}
 	    resultList.setSelectedIndices(selectionIndices);
 	}
     }
+    
     public static void main(String[] args) {
 	Vector<String> v=new Vector<String>();
 	if(args.length>=1) {
