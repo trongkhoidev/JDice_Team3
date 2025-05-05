@@ -97,7 +97,7 @@ public class JDice {
 	    for(i=0;i<selectionIndices.length;i++) {
 		selectionIndices[i]=i;
 	    }
-	    resultList.setListData(listItems);
+	    
 	    resultList.setSelectedIndices(selectionIndices);
 	}
     }
